@@ -3,11 +3,17 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '3xl': '0 0.25rem 0.5rem 0 rgb(0 0 0 / 10%)',
+      },
+    },
     colors: {
       background: '#2F3136',
       onyx: '#36393E',
-      white: "#FFF"
+      onyx2: '#363749',
+      white: '#FFF',
+      purple: '#766FF0'
     },
   },
   plugins: [],
