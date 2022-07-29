@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { trpc } from '../utils/trpc';
 import { PageLayout } from '../components/PageLayout';
+import { FlashCard } from '../components/FlashCard';
 
 const Home: NextPage = () => {
   const hello = trpc.useQuery(['example.hello', { text: 'from tRPC' }]);
@@ -12,11 +13,9 @@ const Home: NextPage = () => {
           <h1 className='text-white text-lg'>Cards of the day!</h1>
         </div>
         <div className='flex flex-1'>
-          <div className='w-1/5 bg-purple'>
-            filter area
-          </div>
-          <div className='flex-1 bg-white'>
-            flash card
+          <div className='w-1/5 bg-purple'>filter area</div>
+          <div className='flex-1 flex justify-center py-6'>
+            <FlashCard />
           </div>
         </div>
       </div>
