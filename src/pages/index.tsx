@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className='flex flex-1'>
           <div className='w-1/5 bg-purple'>filter area</div>
           <div className='flex-1 flex justify-center py-6'>
-            <FlashCard />
+            <FlashCard frontCard={<p>Front</p>} backCard={<p>Back</p>} />
           </div>
         </div>
       </div>
